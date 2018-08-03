@@ -12,7 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('front.index');
 });
-Route::get('/', 'FrontController@index');                                       //首頁
-Route::get('teacher_info', 'FrontController@teacher_info');             //師資介紹
+
+Route::get('teacher_info', function () {
+    return view('front.teacher_info');
+});
