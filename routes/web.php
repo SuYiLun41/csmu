@@ -11,15 +11,15 @@
 |
 */
 
-Route::get('/', function () {                           //首頁
-    return view('front.index');
-});
+// Route::get('/', function () {                           //首頁
+//     return view('front.index');
+// });
 
-Route::get('teacher_info', function () {                            //師資介紹
-    return view('front.teacher_info');
-});
-// Route::get('/', 'FrontController@index');                                      
-// Route::get('teacher_info', 'FrontController@teacher_info');             
+// Route::get('teacher_info', function () {                            //師資介紹
+//     return view('front.teacher_info');
+// });
+Route::get('/', 'FrontController@index');                                      
+Route::get('teacher_info', 'FrontController@teacher_info');             
 
 // 登入登出
 Route::get('admin/login', 'Auth\LoginController@showLoginForm')->name('login');

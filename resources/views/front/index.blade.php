@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-<!doctype html>
+
 <html lang="en">
 
 <head>
@@ -155,8 +154,8 @@
 </body>
 
 </html>
-=======
-@extends('layouts.default')
+
+{{-- @extends('layouts.default')
 @section('css')
 @endsection
 @section('content')
@@ -193,5 +192,5 @@
     <div class="slide_line"></div>
 @endsection
 @section('js')
-@endsection
->>>>>>> 648df7e3e407772a0d705a234f6318c01a9fb2fe
+@endsection --}}
+
