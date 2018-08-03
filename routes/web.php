@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/', 'FrontController@index');                                       //首頁
+Route::get('teacher_info', 'FrontController@teacher_info');             //師資介紹
