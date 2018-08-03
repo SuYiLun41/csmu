@@ -98,10 +98,10 @@
             <div id="education" class="collapse show" aria-labelledby="education_heading">
                 <div class="card-body">
                     <p>
-                    碩士：國立中興大學
+                        碩士：國立中興大學
                     </p>
                     <p>
-                    博士：國立成功大學
+                        博士：國立成功大學
                     </p>
                 </div>
             </div>
@@ -169,22 +169,22 @@
             <div id="research_work" class="collapse" aria-labelledby="research_work_heading">
                 <div class="card-body">
                     <p>
-                    期刊論文
+                        期刊論文
                     </p>
                     <ol>
-                    <li>
-                    Han-Shen Chen, Bi-Kun Tsai, Chi-Ming Hsieh (2017). Determinants of Consumers’ Purchasing Intentions for the Hydrogen-Electric Motorcycle. Sustainability, 9(8), 1447. (SSCI)
-                    </li>
-                    <li>Han-Shen Chen, Wan-Yu Liu, Chi-Ming Hsieh (2017). Integrating Ecosystem Services and Eco-Security to Assess Sustainable Development in Liuqiu Island. Sustainability, 9(6), 1002. (SSCI)</li>
-                    <li>Chi-Ming Hsieh, Bi-Kun Tsai, Han-Shen Chen* (2017). Residents’ Attitude toward Aboriginal Cultural Tourism Development: An Integration of Two Theories. Sustainability. 9(6), 903. (SSCI) (*Corresponding author)</li>
-                    <li>Han-Shen Chen (2017). Establishment and Application of Wetlands Ecosystem Services and Sustainable Ecological Evaluation Indicators. Water, 9(3), 197. (SCI)</li>
-                    <li>Han-Shen Chen (2017). Evaluation and Analysis of Eco-Security in Environmentally Sensitive Areas Using an Emergy Ecological Footprint. International Journal of Environmental Research and Public Health. 14(2),136. (SCI)</li>
-                    <li> Chu-Wei Chen, Han-Shen Chen (2016). Analyzing and measuring the sustainable development for a scenicareabyapplyinganemergy analysis. International Journal of Applied Chemistry. 12(4), 758-793.</li>
-                    <li>Shang-Yu Cheng, Wen-Shin Huang, Han-Shen Chen*, Kuan-Lin Yeh (2016). Language Attitude and Consumer Ethnocentrism in Advertising Communication. Australian Journal of Basic and Applied Sciences, 10(3),52-60. (*Corresponding author)</li>
-                    <li>Han-Shen Chen (2015). The study of the relationship among environmental cognition, attitude,sensitivityand behavior: The case of an eco-resort island. International Journal of Safety and Security Engineering.5(4),352-358. (EI)</li>
-                    <li>Han-Shen Chen (2015). Establishment and Applied Research on a Wetland Ecosystem Evaluation Model in Taiwan. Sustainability. 7(12),15785-15793. (SSCI)</li>
-                    <li>Han-Shen Chen and Wen-Shin Huang (2015). Development of an Ecological Footprint for Accommodation Facilities in Taroko National Park, Taiwan. International Journal of Design & Nature and Ecodynamics.10(2),165-173. (EI)</li>
-                    <li>Han-Shen Chen (2015). Using Water Footprints for Examining the Sustainable Development of Science Parks. Sustainability. 7(5),5521-5541. (SSCI)</li>
+                        <li>
+                            Han-Shen Chen, Bi-Kun Tsai, Chi-Ming Hsieh (2017). Determinants of Consumers’ Purchasing Intentions for the Hydrogen-Electric Motorcycle. Sustainability, 9(8), 1447. (SSCI)
+                        </li>
+                        <li>Han-Shen Chen, Wan-Yu Liu, Chi-Ming Hsieh (2017). Integrating Ecosystem Services and Eco-Security to Assess Sustainable Development in Liuqiu Island. Sustainability, 9(6), 1002. (SSCI)</li>
+                        <li>Chi-Ming Hsieh, Bi-Kun Tsai, Han-Shen Chen* (2017). Residents’ Attitude toward Aboriginal Cultural Tourism Development: An Integration of Two Theories. Sustainability. 9(6), 903. (SSCI) (*Corresponding author)</li>
+                        <li>Han-Shen Chen (2017). Establishment and Application of Wetlands Ecosystem Services and Sustainable Ecological Evaluation Indicators. Water, 9(3), 197. (SCI)</li>
+                        <li>Han-Shen Chen (2017). Evaluation and Analysis of Eco-Security in Environmentally Sensitive Areas Using an Emergy Ecological Footprint. International Journal of Environmental Research and Public Health. 14(2),136. (SCI)</li>
+                        <li> Chu-Wei Chen, Han-Shen Chen (2016). Analyzing and measuring the sustainable development for a scenicareabyapplyinganemergy analysis. International Journal of Applied Chemistry. 12(4), 758-793.</li>
+                        <li>Shang-Yu Cheng, Wen-Shin Huang, Han-Shen Chen*, Kuan-Lin Yeh (2016). Language Attitude and Consumer Ethnocentrism in Advertising Communication. Australian Journal of Basic and Applied Sciences, 10(3),52-60. (*Corresponding author)</li>
+                        <li>Han-Shen Chen (2015). The study of the relationship among environmental cognition, attitude,sensitivityand behavior: The case of an eco-resort island. International Journal of Safety and Security Engineering.5(4),352-358. (EI)</li>
+                        <li>Han-Shen Chen (2015). Establishment and Applied Research on a Wetland Ecosystem Evaluation Model in Taiwan. Sustainability. 7(12),15785-15793. (SSCI)</li>
+                        <li>Han-Shen Chen and Wen-Shin Huang (2015). Development of an Ecological Footprint for Accommodation Facilities in Taroko National Park, Taiwan. International Journal of Design & Nature and Ecodynamics.10(2),165-173. (EI)</li>
+                        <li>Han-Shen Chen (2015). Using Water Footprints for Examining the Sustainable Development of Science Parks. Sustainability. 7(5),5521-5541. (SSCI)</li>
                         <li> Han-Shen Chen (2015). The Establishment and Application of Environment Sustainability Evaluation Indicators for Ecotourism Environments. Sustainability.7(4),4727-4746. (SSCI)</li>
                         <li> Han-Shen Chen, Chia-Yon Chen, Chiung-Tze Chang, Tsuifang Hsieh (2014). The Construction and Application of a Carrying Capacity Evaluation Model in a National Park. Stochastic Environmental Research and Risk Assessment. 28(6),1333-1341. (SCI)</li>
                         <li>Han-Shen Chen (2014). Apply GM (h,N) Model to Analyze the Influence Factor in Hybrid Vehicles, Applied Mathematics & Information Sciences, 8(3),1445-1453. (SCI)</li>
