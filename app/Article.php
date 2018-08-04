@@ -15,6 +15,6 @@ class Article extends Model
     }
 
     public function download_files(){
-        return $this->hasMany('App\DownloadFiles','page_id')->wherePivot('page_type',1);
+        return $this->hasMany('App\DownloadFiles','page_id')->where('page_type',0);
     }
 }

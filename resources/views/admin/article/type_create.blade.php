@@ -15,7 +15,7 @@
                         <div class="form-group">
                             <label for="type_name" class="col-xs-2 control-label">類別名稱</label>
                             <div class="col-xs-10">
-                                <input type="text" class="form-control" id="type_name" name="type_name">
+                                <input type="text" class="form-control" id="type_name" name="type_name" required>
                             </div>
                         </div>
                         <hr>
