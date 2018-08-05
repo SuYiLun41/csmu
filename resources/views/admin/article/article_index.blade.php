@@ -54,7 +54,7 @@
 
         $('.btn-danger').click(function(){
             var listid = $(this).data("listid");
-            if (confirm('確認是否刪除此類別？\n注意!隸屬該類別的文章也將刪除。')){
+            if (confirm('確認是否刪除此文章？')){
                 event.preventDefault();
                 $('.delete-form[data-listid="' + listid + '"]').submit();
             }

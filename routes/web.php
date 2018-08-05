@@ -15,13 +15,13 @@ Route::get('/', 'FrontController@index');   //首頁
 Route::get('teacher_info', 'FrontController@teacher_info');  //師資介紹
 
 // 登入&登出
-Route::get('admin/login', 'Auth\LoginController@showLoginForm')->name('login');
-Route::post('admin/login', 'Auth\LoginController@login');
-Route::post('admin/logout', 'Auth\LoginController@logout')->name('logout');
+Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
+Route::post('login', 'Auth\LoginController@login');
+Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 
 // 註冊
-Route::get('admin/register', 'Auth\RegisterController@showRegistrationForm')->name('register');
-Route::post('admin/register', 'Auth\RegisterController@register');
+Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');
+Route::post('register', 'Auth\RegisterController@register');
 
 // 後台
 Route::group(['prefix'=>'admin','middleware' => 'auth','as' => 'admin.'],function (){
@@ -29,7 +29,6 @@ Route::group(['prefix'=>'admin','middleware' => 'auth','as' => 'admin.'],functio
     Route::post('/delete_upload_file', 'Admin\HomeController@file_delete')->name('file_delete');    // 後台首頁
 
     Route::get('/article_type','Admin\ArticleController@article_type')->name('article_type_index'); // 文章類別-列表
-    Route::get('/article_type/create','Admin\ArticleController@article_type_create')->name('article_type_create');  // 文章類別-新增
     Route::post('/article_type/store','Admin\ArticleController@article_type_store')->name('article_type_store');    // 文章類別-儲存
     Route::get('/article_type/edit/{id}','Admin\ArticleController@article_type_edit')->name('article_type_edit');   // 文章類別-編輯
     Route::post('/article_type/update/{id}','Admin\ArticleController@article_type_update')->name('article_type_update');    // 文章類別-更新

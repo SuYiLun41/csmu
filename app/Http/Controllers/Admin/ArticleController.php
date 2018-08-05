@@ -6,6 +6,7 @@ use App\Article;
 use App\ArticleType;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\File;
 
 class ArticleController extends Controller
 {
@@ -13,9 +14,6 @@ class ArticleController extends Controller
     public function article_type(){
         $lists = ArticleType::all();
         return view('admin.article.type_index',compact('lists'));
-    }
-    public function article_type_create(){
-        return view('admin.article.type_create');
     }
     public function article_type_store(Request $request){
         $new = new ArticleType();
@@ -33,11 +31,19 @@ class ArticleController extends Controller
         $list -> type_name = $request -> type_name;
         $list ->save();
 
-        return redirect(route('admin.article_type_index'))->with('message','修改成功');
+        return $list;
     }
     public function article_type_delete($id,Request $request){
         $list = ArticleType::find($id);
-        dd("最後完成");
+        foreach ($list->articles as $article){
+            foreach ($article->download_files as $file_info){
+                File::delete( public_path().$file_info->url);
+                $file_info->delete();
+            }
+            $article->delete();
+        }
+        $list->delete();
+        return redirect(route('admin.article_type_index'))->with('message','刪除成功');
     }
 
     //文章
@@ -88,8 +94,14 @@ class ArticleController extends Controller
 
         return redirect(route('admin.article_index'))->with('message','更新成功');
     }
-    public function article_delete(){
-
+    public function article_delete($id,Request $request){
+        $article = Article::find($id);
+        foreach ($article-> download_files as $file_info){
+            File::delete( public_path().$file_info->url);
+            $file_info->delete();
+        }
+        $article->delete();
+        return redirect(route('admin.article_index'))->with('message','刪除成功');
     }
 
     public function article_summernote_img_upload(Request $request)

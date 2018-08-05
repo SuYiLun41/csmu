@@ -43,10 +43,10 @@ class HomeController extends Controller
                 return redirect()->back()->with('message','上傳路徑錯誤!');
         }
 
-        $allowed_extensions = ["png", "jpg", "gif", "PNG", "JPG", "GIF", "doc", "docx", "xls" . "xlsx", "pdf", 'DOC', "DOCX", "XLS", "XLSX", "PDF"];
+        $allowed_extensions = ["png", "jpg","jpeg", "gif", "PNG", "JPG", "GIF","JPEG", "doc", "docx", "xls" . "xlsx", "pdf", 'DOC', "DOCX", "XLS", "XLSX", "PDF"];
         if ($file->getClientOriginalExtension() &&
             !in_array($file->getClientOriginalExtension(), $allowed_extensions)) {
-            return redirect()->back()->with('message', '僅接受jpg, png, gif, doc, docx, xls, xlsx, pdf格式檔案!');
+            return redirect()->back()->with('message', '僅接受jpg, png, gif, jpeg, doc, docx, xls, xlsx, pdf格式檔案!');
         }
         $extension = $file->getClientOriginalExtension();
         $destinationPath = public_path() . $upload_folder;
