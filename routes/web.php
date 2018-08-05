@@ -41,6 +41,11 @@ Route::group(['prefix'=>'admin','middleware' => 'auth','as' => 'admin.'],functio
     Route::post('/article/update/{id}','Admin\ArticleController@article_update')->name('article_update');   // 文章-更新
     Route::post('/article/delete/{id}','Admin\ArticleController@article_delete')->name('article_delete');   // 文章-刪除
     Route::post('/article/img_upload','Admin\ArticleController@article_summernote_img_upload')->name('article_img_upload');  // 文章-圖片上傳(Ajax)
+
+    Route::get('/about/{id}','Admin\HomeController@about')->name('about');
+    Route::post('/about/{id}','Admin\HomeController@about_post');
+    Route::get('/english/{id}','Admin\HomeController@english')->name('english');
+    Route::post('/english/{id}','Admin\HomeController@english_post');
 });
 
 

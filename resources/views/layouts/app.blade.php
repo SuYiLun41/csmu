@@ -52,21 +52,31 @@
                                 <li><a href="{{route('admin.article_index')}}">文章列表</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">系所介紹</a></li>
+
                         <li><a href="#">課程資訊</a></li>
                         <li><a href="#">師資陣容</a></li>
                         <li><a href="#">考照資訊</a></li>
                         <li><a href="#">活動專區</a></li>
                         <li class="dropdown">
+                            <?php $abouts =  \App\AboutPage::all(); ?>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
+                                系所介紹 <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                @foreach($abouts as $about)
+                                    <li><a href="{{route('admin.about',$about->id)}}">{{$about->name}}</a></li>
+                                @endforeach
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <?php $englishs =  \App\EnglishPage::all(); ?>
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
                                 英文版頁面 <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Faculty & Staff</a></li>
-                                <li><a href="#">Research</a></li>
-                                <li><a href="#">Program</a></li>
-                                <li><a href="#">Gradute empioyability</a></li>
+                                @foreach($englishs as $english)
+                                    <li><a href="{{route('admin.english',$english->id)}}">{{$english->name}}</a></li>
+                                @endforeach
                             </ul>
                         </li>
                     @endauth
@@ -111,6 +121,15 @@
     <!-- Scripts -->
     <script src="{{asset('js/admin/jquery-3.3.1.min.js')}}" ></script>
     <script src="{{ asset('js/admin/bootstrap.min.js') }}" defer></script>
+
+    @if(session('message') != null)
+        <script>
+            $(document).ready(function () {
+               alert('{{session('message')}}');
+            });
+        </script>
+    @endif
+
     @yield('js')
 </body>
 </html>

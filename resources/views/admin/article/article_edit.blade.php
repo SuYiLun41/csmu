@@ -81,7 +81,7 @@
                             <hr>
                             <div class="form-group">
                                 <div class="col-xs-12 text-center">
-                                    <button type="submit" class="btn btn-success">新增</button>
+                                    <button type="submit" class="btn btn-success">更新</button>
                                 </div>
                             </div>
                         </form>

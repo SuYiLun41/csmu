@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\AboutPage;
 use App\DownloadFiles;
+use App\EnglishPage;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\File;
@@ -85,5 +87,40 @@ class HomeController extends Controller
         else
             echo 'fail';
         exit;
+    }
+
+    //系所介紹
+    public function about($id){
+        $about_info = AboutPage::find($id);
+        if($about_info){
+            return view('admin.about',compact('about_info'));
+        }
+        else
+        {
+            return redirect(route('admin.home'))->with('message','無此頁面!');
+        }
+    }
+    public function about_post($id,Request $request){
+        $about_info = AboutPage::find($id);
+        $about_info -> main_content = $request -> main_content;
+        $about_info->save();
+        return redirect()->back()->with('message','修改成功!');
+    }
+    //英文版
+    public function english($id){
+        $english_info = EnglishPage::find($id);
+        if($english_info){
+            return view('admin.english',compact('english_info'));
+        }
+        else
+        {
+            return redirect(route('admin.home'))->with('message','無此頁面!');
+        }
+    }
+    public function english_post($id,Request $request){
+        $english_info = EnglishPage::find($id);
+        $english_info -> main_content = $request -> main_content;
+        $english_info->save();
+        return redirect()->back()->with('message','修改成功!');
     }
 }
