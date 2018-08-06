@@ -15,6 +15,9 @@
         body {
             font-family: "Heiti TC", "Microsoft JhengHei", "LiHei Pro", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
         }
+        a{
+            color: inherit;
+        }
 
         .top_line {
             height: 5px;
@@ -79,7 +82,7 @@
                 <h1>健康餐飲暨產業管理學系暨碩士班</h1>
                 <h2>Department of Health Diet and Industry Management</h2>
             </div>
-            <i class="fas fa-bars"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            <i class="fas fa-bars d-block d-lg-none"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                aria-expanded="false" aria-label="Toggle navigation"></i>
             <div class="clearfix"></div>
         </div>
